@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hashtag Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container glass">
+    <h1 class="title">✨ Hashtag Generator</h1>
+    <input type="text" id="topicInput" placeholder="Enter a topic..." />
+    <button onclick="generateHashtags()">Generate</button>
+    <div id="output" class="hashtags"></div>
+    <div id="output" class="hashtags"></div>
+
+    <div id="copyContainer" style="display: none;">
+      <button id="copyButton" onclick="copyHashtags()">📋 Copy All</button>
+      <span id="copyStatus"></span>
+    </div>
+    
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
